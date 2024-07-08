@@ -1,0 +1,48 @@
+body{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+ul, ol {
+    padding: 0;
+}
+
+li{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.tag{
+    border: solid 5px;
+    margin: 10px;
+}
+
+.tag label {
+    color: #fff;
+    font-size: 25px;
+    vertical-align: top;
+    margin-right: 10px;
+    padding: 0px 5px 3px 3px;
+}
+
+#aninhado > li {
+    color: rgb(131, 131, 255);
+}
+
+[feira]{
+    color: rgb(246, 193, 113);
+}
+
+[feira=casa]{
+    background-color: rgb(255, 255, 228);
+}
+
+/*contem SA*/
+[feira*=sa]{
+    font-weight: 700;
+}
+
+#first > :nth-child(even){
+    color: rgb(245, 4, 140);
+    background-color:rgba(195, 155, 233, 0.579) ;
+}

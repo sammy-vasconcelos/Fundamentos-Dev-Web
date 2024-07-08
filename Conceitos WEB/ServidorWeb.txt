@@ -1,0 +1,37 @@
+- Cluster: conjunto de computadores que se conhecem entre si para atender um site de porte grande
+
+Server-Side: aplicação em que toda a logica e renderização visual são feitas pelo servidor
+  - Pode causar uma latência por ter que eseprar o servidor carregar tudo
+
+Client-Side (Front-End + Services): parte do processo de renderização dos componentes, detalhes visuais é gerado no lado do Cliente
+    com JS. SPA (Single Page Aplication), a primeira página é renderizada e é gerado dinamicamente com JS.
+
+// Conteúdos //
+Server-Side_____________________________________________________________________
+Conteúdo estático: gerados a partir de arquivos no servidor
+Conteúdo Dinâmico: gerado pelo código
+________________________________________________________________________________
+
+
+// DNS - Domain Name System //
+Traduz os nomes de domínio em endereço IP
+
+
+// Web Service //
+Serviço que a aplicação provê, disponibilizado em tecnologias da Web e os dados são trafegados de forma textual(geralmente)
+- SOAP (Simple Object Access Protocol): 
+    - é mais burocrático
+    - é usado um conceito WSDL (Web Service Description Language) que descreve as funcionalidades, como são os dados... 
+    - Baseado em XML
+    - RPC (Remote Procedure Call), a partir de um cliente, é possivel invocar uma função que está remota
+
+- REST (Representational State Transfer): 
+    - mais simples e leve
+    - utiliza os próprios métodos HTTP para fazer requisições
+    - baseado em JSON (mas pode retornar outros formatos, como XML)
+    - uma API é RESTful quando está em conformidade com o REST
+
+
+// Arquiteturas de Web Service // 
+  SOA: é mais antiga, tem vários serviços instalados dentro de um ESB (um barramento)
+  Micro Service: uma aplicação maior e quebrar em vários módulos e tem uma equipe específica para lidar com cada micro serviço.

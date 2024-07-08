@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            Regras da especificidade:
+
+            1. !important (seu uso é desencorajado por se tornar um ciclo vicioso e acaba se tornando uma gambiarra)
+            2. seletores mais específicos 
+            3. última regra processada (empate)
+        */
+
+        p {
+            background-color: rgb(123, 241, 105);
+        }
+
+        /* 
+            Uma classe é mais específica do que a tag p 
+            
+            Não importa se a classe estiver acima ou abaixo da tag p acima, como ela 
+            é mais especifica, é essa a configuração que permanece
+        */
+        .lala{
+            background-color: rgb(160, 133, 246);
+            border: dashed 2px rgb(57, 57, 57);
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        /* Esse é mais específico ainda, então as configs dele são as que vão ser
+           mostradas
+        */
+        p.lala{
+            border: solid 3px rgb(245, 10, 186);
+            background: linear-gradient(to right, rgb(0, 255, 128), rgb(179, 255, 0), yellow);
+        }
+
+        /* 
+            Ordem das específicidades(menor para o maior): 
+            Elemento/Pseudo-Elemento < Classe/Pseudo-Classe < ID < Inline Styles
+        */
+    </style>
+</head>
+<body>
+    <div>okokokokokokokkokokokok</div>
+    <p class="lala">lalallalalalalallalalalalal</p>
+</body>
+</html>

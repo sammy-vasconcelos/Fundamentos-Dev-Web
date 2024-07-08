@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{font-size: 30px; margin: 0;}
+        .c1 {background-color: rgb(113, 239, 239);}
+        .c2 {background-color: rgb(107, 83, 243);}
+        .c3 {background-color: rgb(182, 114, 255);}
+
+        .inline {background-color: rgb(113, 239, 239);}
+        .inline-block {background-color: rgb(113, 121, 239);}
+
+        .block{
+            width: 200px;
+            height: 80px;
+            display: block; /*Cada elemento na sua linha*/
+            border-radius: 5px;
+        }
+        .inlineA{
+            margin-top: 50px;
+        }
+        .inline{
+            width: 30px;
+            height: 30px;
+            margin-top: 700px;
+            padding-top: 10px;
+            display: inline; /*A largura e altura definidos são ignorados, o que conta é o padding*/
+            border-radius: 5px;
+        }
+
+        .inline-block{
+            width: 50px;
+            height: 100px;
+            padding-left: 10px;
+            display: inline-block; /*A largura e altura não são ignorados*/
+            border-radius: 5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="c1">1</div>
+        <div class="c2">2</div>
+        <div class="c3">3</div>
+    </div>
+
+    <div class="inlineA">
+        <div class="inline">1</div>
+        <div class="inline">2</div>
+        <div class="inline">3</div>
+    </div>
+
+    <div class="inline-blockA">
+        <div class="inline-block">1</div>
+        <div class="inline-block">2</div>
+        <div class="inline-block">3</div>
+    </div>
+    
+</body>
+</html>

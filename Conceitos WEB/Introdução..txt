@@ -1,0 +1,29 @@
+**A base da internet é o protocolo TCP/IP Transmission Control Protocol/ Internet Protocol (orientado a conexão e confiável)**
+  Ele utiliza o padrão Layers, é separado em camadas e cada uma tem sua responsabilidades
+  São 4 camadas: Aplicação, Transporte, Internet, Rede/Física
+
+
+// HTTP //
+Hyper Text Transfer Protocol 
+Hyper Text - Documentos escritos em HTML, que tem textos linkados e faz referência a outros formatos de arquivos
+           - Está na camada de Aplicação 
+           - É um protocolo Stateless: toda conexão é como se fosse a primeira
+           - Cliente-Servidor: baseado em requisição e resposta. Cliente manda uma requisição a partir de uma URL e seus parameteros, 
+             e o servidor manda a resposta
+           - Retorna conteúdos para formar uma página web
+Tem 8 métodos:
+ - Get
+ - Post
+ - Put
+ - Delete
+ - Trace
+ - Options
+ - Connect
+ - Head
+
+Status HTTP:
+ - 1XX - Informação
+ - 2XX - Sucesso
+ - 3XX - Redirecionamento
+ - 4XX - Erro no Cliente
+ - 5XX - Erro no Servidor

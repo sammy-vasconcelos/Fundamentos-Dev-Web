@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{font-size: 30px; margin: 0;}
+        .c1 {background-color: rgb(113, 239, 239);}
+        .c2 {background-color: rgb(107, 83, 243);}
+        .c3 {background-color: rgb(182, 114, 255);}
+
+        div{
+            float:  left; 
+            padding: 30px 20px;
+
+            /* As margens podem se sobrepoem e formar um margin collapse */
+            /* 
+                Ajudam a evitar margin collapse: 
+                - float 
+                - postion absolute
+                - display inline-block
+            */
+            margin: 20px;
+            border: solid 2px rgba(42, 12, 81, 0.284);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">1</div>
+    <div class="c2">2</div>
+    <div class="c3">3</div>
+</body>
+</html>

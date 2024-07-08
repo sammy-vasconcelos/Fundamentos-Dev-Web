@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            Os elementos dentro do body irão herdar essas características
+            Porém, algumas propriedades não são herdadas por padrão
+        */
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            border: solid 2px red; /*Border e Padding são exemplos que não sao herdados*/
+            padding: 30px;
+        }
+
+        div:nth-child(2){
+            border: inherit; /* Para herdar propriedades que não são herdadas por padrão, basta usar o inherit*/
+            padding: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">Herança</div>
+    <div class="filho">Estou Herdando</div>
+</body>
+</html>

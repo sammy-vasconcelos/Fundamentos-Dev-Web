@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        div {
+            background-color: rgb(50, 224, 50);
+        }
+
+        span {
+            background-color: rgb(49, 0, 128);
+        }
+
+        span,div{
+            width: 50%;
+            height: 50%;
+        }
+
+
+         /* 
+            Mesmo com o width 100%, outras propriedades podem alterar 
+            o tamanho da box, como o Padding
+
+            Com o box-sizing: border-box; nenhuma propriedade vai conseguir
+            extrapolar o tamanho do width
+        */
+        .box{
+            background-color: lightblue;
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            text-align: center;
+            padding: 100px;
+            border: solid 5px;
+            box-sizing: border-box; /* pode ser deixado no seletor universal*/
+        }
+
+        /*
+            Acontece de a Div ser menor que o conteúdo dentro dela
+            o Overflow serve para trabalhar isso
+        */
+        .overflow{
+            font-size: 35px;
+            width: 160px;
+            height: 100px;
+            border: solid 3px;
+            overflow: hidden; /*Esconde a parte que sai de dentro da area da div*/
+        }
+        .overflow2{
+            font-size: 35px;
+            width: 160px;
+            height: 100px;
+            border: solid 3px;
+            overflow: scroll; /*scroll nos dois eixos*/
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div>Título Altura e Largura</div>
+    <span>SubTítulo</span>
+
+    <div class="box"> O tamanho da box</div>
+
+    <div>Overflow</div>
+    <div class="overflow">Não consigo ler nada</div>
+    <div class="overflow2">AAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+</body>
+</html>
