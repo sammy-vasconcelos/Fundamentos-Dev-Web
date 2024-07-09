@@ -1,2 +1,2 @@
-# Fundamentos-JavaScript
-Fundamentos JavaScript
+# Fundamentos Web 
+Esse repositório tem uma Wiki!
